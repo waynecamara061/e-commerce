@@ -1,17 +1,18 @@
 import React from 'react'
+import './Home.scss';
 import { Link } from 'react-router-dom'
 
 const Home = () => {
     return (
-        <div>
+        <div className='home-container'>
             <h1>
                 Home
             </h1>
             <button>
-                <Link to={`/Products/${productId}`}>Produto</Link>
+                <Link to={`/Products/1`}>Produto</Link>
             </button>
         </div>
     )
 }
 
-export default Home
+export default Home;

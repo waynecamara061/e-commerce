@@ -1,0 +1,14 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin main-button($background: #f2dfd3, $color: #1f1204) {
+    border-radius: 15px;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    background-color: $background;
+    color: $color;
+}
