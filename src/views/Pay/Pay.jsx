@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Header from '../../components/Header/Header';
 
 function Pay(props) {
 
@@ -9,13 +10,7 @@ function Pay(props) {
 
   return (
     <div>
-      <h1>{props.title}</h1>
-      <h2>{count}</h2>
-      <ul>
-        {props.list.map(cardapio => <li>{cardapio}</li>)}
-      </ul>
-      <button onClick={() => setCount(count + 1)}>
-        Aumenta</button>
+      <Header />
     </div>
   )
 }

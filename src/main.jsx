@@ -6,23 +6,24 @@ import Products from './views/Products/products';
 import './index.scss';
 import { createBrowserRouter, RouterProvider, } from "react-router-dom";
 import Pay from './views/Pay/Pay';
+import { PRODUCTS_MOCK } from './mock/productsmock'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Login />,
+    element: <Login />
   },
   {
     path: "/home",
-    element: <Home />,
+    element: <Home data={PRODUCTS_MOCK} />
   },
   {
     path: "/products/:productId",
-    element: <Products />,
+    element: <Products data={PRODUCTS_MOCK} />
   },
   {
-    path: "/pay",
-    element: <Pay title="Contador" list={['Café expresso', 'Café americano', 'Café com leite']} />,
+    path: "/pay/:payId",
+    element: <Pay data={PRODUCTS_MOCK} />
   },
 ]);
 

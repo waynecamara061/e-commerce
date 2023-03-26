@@ -1,16 +1,22 @@
 import React from 'react'
 import './Home.scss';
 import { Link } from 'react-router-dom'
+import SubHeader from '../../components/SubHeader/SubHeader';
+import Footer from '../../components/Footer/Footer';
+import ProductsCard from '../../components/ProductsCard/ProductsCard';
 
-const Home = () => {
+
+const Home = ({ data }) => {
     return (
         <div className='home-container'>
-            <h1>
-                Home
-            </h1>
-            <button>
-                <Link to={`/Products/1`}>Produto</Link>
-            </button>
+            <SubHeader />
+            <img src="backgroundImage-game.png" alt="" className='game-bg' />
+            <div className='section-card'>
+                {data.map((product) => (
+                    <ProductsCard key={product.id} data={product} />
+                ))}
+            </div>
+            <Footer />
         </div>
     )
 }
