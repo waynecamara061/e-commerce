@@ -1,0 +1,90 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500&family=Maven+Pro:wght@500&family=Raleway:ital,wght@0,400;0,700;1,200&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500&family=Maven+Pro:wght@500&family=Raleway:ital,wght@0,400;0,700;1,200&display=swap');
+
+
+
+
+  .h1-title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      margin-top: 90px;
+      padding-bottom: 15px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 30px;
+  }
+
+  .h2-title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 30px;
+  }
+
+  .form-container {
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 120px;
+  }
+
+  .form-container {
+
+      button {
+          background-color: #0C70F2;
+          color: white;
+          width: 524px;
+          height: 48px;
+          margin-top: 30px;
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          border-radius: 10px;
+          font-weight: 800;
+          font-size: 18px;
+          border: none;
+          cursor: pointer;
+          font-family: 'Inter', sans-serif;
+      }
+
+      a {
+        width: 100%;
+        color: white;
+        text-decoration: none;
+      }
+  }
+
+  .inputs-container {
+      input {
+
+          width: 520px;
+          height: 52px;
+          border-radius: 10px;
+          border: 1px solid black;
+          margin-bottom: 40px;
+          padding: 20px 36px 20px 10px;
+      }
+
+      h1 {
+          font-family: 'Inter', sans-serif;
+          margin: 5px;
+          font-weight: 300;
+          font-size: 20px;
+      }
+
+      h2 {
+          font-family: 'Inter', sans-serif;
+          margin: 5px;
+          font-weight: 300;
+          font-size: 20px;
+      }
+  }
