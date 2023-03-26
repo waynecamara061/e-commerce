@@ -7,6 +7,7 @@ import './index.scss';
 import { createBrowserRouter, RouterProvider, } from "react-router-dom";
 import Pay from './views/Pay/Pay';
 import { PRODUCTS_MOCK } from './mock/productsmock'
+import Finally from './views/Finally/Finally';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "/pay/:payId",
     element: <Pay data={PRODUCTS_MOCK} />
+  },
+  {
+    path: "/finally",
+    element: <Finally data={PRODUCTS_MOCK} />
   },
 ]);
 
