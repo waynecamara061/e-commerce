@@ -26,12 +26,12 @@ const ProductDetail = ({ data }) => {
                         <h2> {data.price}</h2>
                         <p>
                             Cor:{" "}
-                            {data.colors.lenth === 1
+                            {data.colors.length === 1
                                 ? data.colors.map((color, index) => (
                                     <span key={index}>{color}</span>
                                 ))
                                 : data.colors.map((color, index) =>
-                                    index + 1 === data.colors.lenth ? (
+                                    index + 1 === data.colors.length ? (
                                         <span key={index}>{color} </span>
 
                                     ) : (
