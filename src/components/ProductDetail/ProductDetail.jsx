@@ -13,7 +13,7 @@ const ProductDetail = ({ data }) => {
                             <p>{data.title}</p>
                         </div>
                         <div className='text-container'>
-                            <h2>descrição do produto</h2>
+                            <h2>Descrição</h2>
                             <p>{data.title}</p>
                             <hr />
                         </div>
@@ -24,12 +24,26 @@ const ProductDetail = ({ data }) => {
                         <h1> titulo do produto </h1>
                         <hr />
                         <h2> {data.price}</h2>
-                        <div className='quadrado-preto'>
-                            <button></button>
-                        </div>
+                        <p>
+                            Cor:{" "}
+                            {data.colors.lenth === 1
+                                ? data.colors.map((color, index) => (
+                                    <span key={index}>{color}</span>
+                                ))
+                                : data.colors.map((color, index) =>
+                                    index + 1 === data.colors.lenth ? (
+                                        <span key={index}>{color} </span>
+
+                                    ) : (
+                                        <span key={index}>{color} </span>
+                                    )
+                                )}
+                        </p>
+                        <button className='quadrado-preto'></button>
+                        <button className='quadrado-branco'></button>
                     </div>
-                    <button className='btn-carrinho'> <Link to={`/pay/${data.id}`}></Link>
-                        Adicionar ao Carrinho
+                    <button className='btn-carrinho'> <Link to={`/pay/${data.id}`}> Adicionar ao Carrinho</Link>
+
                     </button>
                 </div>
             </div>
