@@ -1,6 +1,5 @@
 
 export const PRODUCTS_MOCK = [
-
     {
         id: 1,
         imgPath: "xbox.png",
